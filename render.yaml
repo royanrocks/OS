@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: os-luxury-training
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
