@@ -6,7 +6,8 @@ const sectionMap = new Map();
 
 for (const anchor of navAnchors) {
   const id = anchor.getAttribute("href");
-  const section = id ? document.querySelector(id) : null;
+  if (!id || !id.startsWith("#")) continue;
+  const section = document.querySelector(id);
   if (section) {
     sectionMap.set(section, anchor);
   }
