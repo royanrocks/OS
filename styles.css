@@ -164,6 +164,12 @@ h1 {
   max-width: 64ch;
 }
 
+.lead-sub {
+  margin-top: 0.75rem;
+  color: #b9c1ca;
+  max-width: 64ch;
+}
+
 .cta-row {
   margin-top: 2rem;
   display: flex;
@@ -285,6 +291,17 @@ h1 {
   font-size: 0.93rem;
 }
 
+.card-bullets {
+  margin: 0.55rem 0 0;
+  padding-left: 1.1rem;
+  color: #d1d7de;
+  font-size: 0.88rem;
+}
+
+.card-bullets li + li {
+  margin-top: 0.35rem;
+}
+
 .chip-link {
   margin-top: 1rem;
   display: inline-flex;
@@ -302,6 +319,13 @@ h1 {
   line-height: 1.5;
   max-width: 64ch;
   color: #ced3da;
+}
+
+.philosophy-subcopy {
+  margin-top: 0.6rem;
+  color: #b8c0c8;
+  font-size: 0.98rem;
+  letter-spacing: 0.03em;
 }
 
 .pillar-grid {
