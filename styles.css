@@ -452,6 +452,136 @@ h1 {
   font-size: 0.8rem;
 }
 
+.page-main,
+.subpage-main {
+  padding-top: 6.5rem;
+}
+
+.page-hero {
+  padding-top: 2rem;
+}
+
+.page-title {
+  margin-top: 0.5rem;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  max-width: none;
+}
+
+.page-intro {
+  margin-top: 0.9rem;
+  color: #c5ccd3;
+  max-width: 62ch;
+}
+
+.bio-page {
+  padding-top: 2.4rem;
+}
+
+.bio-page-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(280px, 1.1fr);
+  gap: 1.2rem;
+}
+
+.bio-photo-placeholder {
+  margin: 0;
+  border: 1px dashed rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  min-height: 500px;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+    #0a0a0a;
+  display: grid;
+  place-items: center;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: #c7ced6;
+  padding: 1rem;
+}
+
+.placeholder-content p {
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.placeholder-content small {
+  display: block;
+  margin-top: 0.6rem;
+  color: #959da8;
+}
+
+.bio-body {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: clamp(1.2rem, 3.2vw, 2rem);
+  background: #0b0b0b;
+}
+
+.bio-body h2 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+}
+
+.bio-body p {
+  margin-top: 0.85rem;
+  color: #c5ccd3;
+}
+
+.bio-body .btn {
+  margin-top: 1.2rem;
+}
+
+.testimonial-page {
+  padding-top: 2rem;
+}
+
+.quote-marquee {
+  margin-top: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0a0a;
+  padding: 1.2rem 0;
+}
+
+.quote-track {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  width: max-content;
+  animation: quote-scroll-right 48s linear infinite;
+}
+
+.quote-track p {
+  margin: 0;
+  width: min(340px, 78vw);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 1rem;
+  color: #c9d0d7;
+  background: rgba(255, 255, 255, 0.02);
+  line-height: 1.55;
+  flex-shrink: 0;
+}
+
+.subpage-cta {
+  margin-top: 1.5rem;
+}
+
+@keyframes quote-scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .floating-cta {
   position: fixed;
   right: 1rem;
@@ -504,6 +634,11 @@ h1 {
     padding: 5.75rem 0 3.8rem 1rem;
   }
 
+  .page-main,
+  .subpage-main {
+    padding-top: 5.75rem;
+  }
+
   .service-grid,
   .pillar-grid {
     grid-template-columns: 1fr;
@@ -514,6 +649,10 @@ h1 {
   }
 
   .qualification-list {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-page-grid {
     grid-template-columns: 1fr;
   }
 }
