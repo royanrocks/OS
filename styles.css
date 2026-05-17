@@ -685,6 +685,7 @@ h1 {
 }
 
 .consultation-form input,
+.consultation-form select,
 .consultation-form textarea {
   margin-top: 0.4rem;
   width: 100%;
@@ -701,6 +702,7 @@ h1 {
 }
 
 .consultation-form input:focus,
+.consultation-form select:focus,
 .consultation-form textarea:focus {
   outline: none;
   border-color: rgba(69, 129, 103, 0.85);
