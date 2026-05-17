@@ -862,7 +862,9 @@ h1 {
   }
 
   .hero-side-media {
-    display: none;
+    width: min(38vw, 300px);
+    height: min(66vh, 520px);
+    right: 0.75rem;
   }
 
   .page-main,
@@ -895,5 +897,11 @@ h1 {
   .form-grid.two-col,
   .interest-options {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-side-media {
+    display: none;
   }
 }
