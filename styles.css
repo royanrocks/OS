@@ -128,6 +128,27 @@ a {
     linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.88));
 }
 
+.hero-side-media {
+  position: absolute;
+  right: clamp(1rem, 3vw, 2.5rem);
+  bottom: 0;
+  width: min(34vw, 430px);
+  height: min(82vh, 700px);
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-side-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -175,6 +196,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
+}
+
+.hero-cta-row {
+  justify-content: center;
 }
 
 .btn {
@@ -232,6 +257,7 @@ h1 {
 .services,
 .philosophy,
 .founder,
+.testimonials-link,
 .inquire {
   padding: clamp(4.2rem, 7vw, 6.5rem) 0 0;
 }
@@ -455,6 +481,10 @@ h1 {
   background:
     linear-gradient(160deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
     #0b0b0b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .inquire-box h2 {
@@ -470,6 +500,14 @@ h1 {
 
 .inquire-box .btn {
   margin-top: 1.25rem;
+}
+
+.testimonials-link .quote-marquee {
+  margin-top: 1.05rem;
+}
+
+.testimonials-link-btn {
+  margin-top: 1.2rem;
 }
 
 .site-footer {
@@ -661,6 +699,10 @@ h1 {
   .hero-content {
     width: calc(100% - 2rem);
     padding: 5.75rem 0 3.8rem 1rem;
+  }
+
+  .hero-side-media {
+    display: none;
   }
 
   .page-main,
