@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OS | Consultation</title>
+    <meta
+      name="description"
+      content="Submit a consultation request to OS and share your training goals."
+    />
+    <link rel="icon" href="/images/os-mark.png" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="subpage-body">
+    <header class="site-header subpage-header" id="top">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="brand" href="/index.html" aria-label="OS home">OS</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/index.html#philosophy">THE PHILOSOPHY</a></li>
+          <li><a href="/bio.html">THE FOUNDER</a></li>
+          <li><a href="/testimonials.html">TESTIMONIALS</a></li>
+          <li><a class="is-active" href="/consultation.html">CONSULTATION</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="subpage-main">
+      <section class="section-shell consultation-page">
+        <div class="section-topline">
+          <p>CONSULTATION</p>
+          <h1 class="page-title">START YOUR CONSULTATION.</h1>
+        </div>
+        <p class="page-intro">
+          Share your goals and we will follow up with next steps based on your needs and schedule.
+        </p>
+
+        <form class="consultation-form" id="consultation-form" novalidate>
+          <input type="text" name="company" class="honeypot" tabindex="-1" autocomplete="off" />
+
+          <div class="form-grid two-col">
+            <label>
+              First Name *
+              <input type="text" name="firstName" required />
+            </label>
+            <label>
+              Last Name *
+              <input type="text" name="lastName" required />
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Email *
+              <input type="email" name="email" required />
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Phone *
+              <input type="tel" name="phone" required />
+            </label>
+          </div>
+
+          <fieldset class="interest-fieldset">
+            <legend>I'm interested in... *</legend>
+            <div class="interest-options">
+              <label><input type="checkbox" name="interest" value="IN-PERSON TRAINING" /> In-Person Training</label>
+              <label><input type="checkbox" name="interest" value="VIRTUAL TRAINING" /> Virtual Training</label>
+              <label><input type="checkbox" name="interest" value="CUSTOM WORKOUT PROGRAM" /> Custom Workout Program</label>
+            </div>
+          </fieldset>
+
+          <div class="form-grid">
+            <label>
+              Why training? *
+              <textarea name="whyTraining" rows="4" required></textarea>
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              How did you find? *
+              <input type="text" name="howFound" required />
+            </label>
+          </div>
+
+          <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+          <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+
+          <button class="btn btn-primary form-submit" type="submit" id="form-submit">
+            Send
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>OS — Training Systems for High-Impact Individuals</p>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script src="/config.js"></script>
+    <script src="/consultation.js"></script>
+  </body>
+</html>

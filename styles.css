@@ -651,6 +651,118 @@ h1 {
   margin-top: 1.5rem;
 }
 
+.consultation-page {
+  padding-top: 2rem;
+}
+
+.consultation-form {
+  margin-top: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    linear-gradient(160deg, rgba(31, 79, 61, 0.12), rgba(22, 58, 45, 0.08)),
+    #0b0b0b;
+  padding: clamp(1.15rem, 3vw, 1.7rem);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin-bottom: 0.95rem;
+}
+
+.form-grid.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.consultation-form label,
+.interest-fieldset legend {
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #cfd6dd;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+  margin-top: 0.4rem;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(3, 5, 6, 0.92);
+  color: var(--silver);
+  padding: 0.72rem 0.8rem;
+  font-size: 0.95rem;
+}
+
+.consultation-form textarea {
+  resize: vertical;
+}
+
+.consultation-form input:focus,
+.consultation-form textarea:focus {
+  outline: none;
+  border-color: rgba(69, 129, 103, 0.85);
+  box-shadow: 0 0 0 2px rgba(69, 129, 103, 0.2);
+}
+
+.interest-fieldset {
+  margin: 0.6rem 0 1rem;
+  border: 0;
+  padding: 0;
+}
+
+.interest-options {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.interest-options label {
+  text-transform: none;
+  letter-spacing: 0.03em;
+  font-size: 0.88rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0.65rem 0.72rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.interest-options input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.form-error,
+.form-success {
+  min-height: 1.2rem;
+  margin: 0.25rem 0 0.45rem;
+  font-size: 0.85rem;
+}
+
+.form-error {
+  color: #f09c9c;
+}
+
+.form-success {
+  color: #9fd6b8;
+}
+
+.form-submit[disabled] {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
 @keyframes quote-scroll-right {
   from {
     transform: translateX(-50%);
@@ -738,5 +850,10 @@ h1 {
   .testimonials-lead-wrap {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .form-grid.two-col,
+  .interest-options {
+    grid-template-columns: 1fr;
   }
 }

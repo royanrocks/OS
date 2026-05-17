@@ -1,0 +1,1 @@
+window.OS_CONFIG = {"MAKE_WEBHOOK_URL":"","MAKE_API_KEY":""};
