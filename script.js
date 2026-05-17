@@ -66,3 +66,31 @@ const observer = new IntersectionObserver(
 for (const section of sectionMap.keys()) {
   observer.observe(section);
 }
+
+const policyModal = document.querySelector(".policy-modal");
+const policyOpen = document.querySelector("[data-policy-open]");
+const policyCloseButtons = document.querySelectorAll("[data-policy-close]");
+
+const closePolicyModal = () => {
+  if (!policyModal) return;
+  policyModal.hidden = true;
+  document.body.style.overflow = "";
+};
+
+const openPolicyModal = () => {
+  if (!policyModal) return;
+  policyModal.hidden = false;
+  document.body.style.overflow = "hidden";
+};
+
+policyOpen?.addEventListener("click", openPolicyModal);
+
+for (const closeButton of policyCloseButtons) {
+  closeButton.addEventListener("click", closePolicyModal);
+}
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && policyModal && !policyModal.hidden) {
+    closePolicyModal();
+  }
+});

@@ -503,6 +503,95 @@ h1 {
   margin-top: 1.2rem;
 }
 
+.policy-strip {
+  padding: 2.2rem 0 0.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.policy-trigger {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: #c7d0d9;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  font-size: 0.73rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.policy-trigger:hover {
+  border-color: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e3e8ec;
+}
+
+.policy-modal[hidden] {
+  display: none;
+}
+
+.policy-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.policy-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.68);
+}
+
+.policy-modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(560px, 100%);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #0b0b0b;
+  padding: clamp(1rem, 3vw, 1.4rem);
+}
+
+.policy-close {
+  position: absolute;
+  right: 0.85rem;
+  top: 0.85rem;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: #cad2da;
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.policy-modal-panel h2 {
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  letter-spacing: -0.01em;
+}
+
+.policy-modal-panel p {
+  margin-top: 0.75rem;
+  color: #c4ccd4;
+}
+
+.policy-modal-panel ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.1rem;
+  color: #cdd5dd;
+}
+
+.policy-modal-panel li + li {
+  margin-top: 0.45rem;
+}
+
 .site-footer {
   width: min(1160px, calc(100% - 3rem));
   margin: 5rem auto 2rem;
