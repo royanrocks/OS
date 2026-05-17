@@ -342,7 +342,7 @@ h1 {
   margin-top: 1.45rem;
   display: grid;
   gap: 0.8rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 }
 
 .pillar-grid article {
@@ -362,6 +362,13 @@ h1 {
   margin-top: 0.25rem;
   font-size: 0.95rem;
   letter-spacing: 0.07em;
+}
+
+.pillar-grid p {
+  margin-top: 0.35rem;
+  color: #bfc7cf;
+  font-size: 0.86rem;
+  line-height: 1.45;
 }
 
 .founder-layout {
