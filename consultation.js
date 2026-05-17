@@ -3,9 +3,8 @@ const errorEl = document.getElementById("form-error");
 const successEl = document.getElementById("form-success");
 const submitBtn = document.getElementById("form-submit");
 
-const config = window.OS_CONFIG || {};
-const webhookUrl = config.MAKE_WEBHOOK_URL || "";
-const makeApiKey = config.MAKE_API_KEY || "";
+const webhookUrl = "https://hook.us1.make.com/gkkavq3awdv5cvjuq4y2ni3u4dxr53gi";
+const makeApiKey = "AK47666";
 
 const setStatus = (type, message) => {
   if (!errorEl || !successEl) return;
@@ -30,11 +29,6 @@ form?.addEventListener("submit", async (event) => {
 
   if (interests.length === 0) {
     setStatus("error", "Select at least one interest.");
-    return;
-  }
-
-  if (!webhookUrl || !makeApiKey) {
-    setStatus("error", "Form is not configured yet. Please contact support.");
     return;
   }
 

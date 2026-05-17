@@ -2,6 +2,6 @@ services:
   - type: web
     name: os-luxury-training
     env: static
-    buildCommand: "python3 scripts/generate_client_config.py"
+    buildCommand: ""
     staticPublishPath: .
     pullRequestPreviewsEnabled: false
