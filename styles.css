@@ -952,6 +952,11 @@ h1 {
     padding: 5.75rem 0 3.8rem 1rem;
   }
 
+  .hero-signal {
+    letter-spacing: 0.15em;
+    font-size: 0.66rem;
+  }
+
   .page-main,
   .subpage-main {
     padding-top: 5.75rem;
