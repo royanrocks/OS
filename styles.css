@@ -167,10 +167,26 @@ h1 {
   max-width: 64ch;
 }
 
+.lead-emphasis {
+  margin-top: 0.9rem;
+  color: #e4e8ec;
+  font-weight: 500;
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  max-width: 64ch;
+}
+
 .lead-sub {
   margin-top: 0.75rem;
   color: #b9c1ca;
   max-width: 64ch;
+}
+
+.hero-signal {
+  margin-top: 1.6rem;
+  color: #b3bcc6;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
 }
 
 .cta-row {
