@@ -968,6 +968,23 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .service-card img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .card-photo-assessment {
+    object-position: center 37%;
+  }
+
+  .card-photo-coaching {
+    object-position: center 57%;
+  }
+
+  .card-photo-support {
+    object-position: center 53%;
+  }
+
   .founder-layout {
     grid-template-columns: 1fr;
   }
